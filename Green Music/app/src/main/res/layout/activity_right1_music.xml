@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg_default">
+
+    <ImageView
+        android:id="@+id/iv_right1_music_bg"
+        android:layout_width="315dp"
+        android:layout_height="558dp"
+        android:layout_centerInParent="true"
+        app:srcCompat="@drawable/bg_right1_music" />
+
+    <ImageView
+        android:id="@+id/iv_right1_music_start"
+        android:layout_width="380dp"
+        android:layout_height="410dp"
+        android:layout_alignEnd="@id/iv_right1_music_bg"
+        android:layout_alignRight="@id/iv_right1_music_bg"
+        android:layout_alignTop="@id/iv_right1_music_bg"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
+        android:layout_marginTop="67dp"
+        android:scaleType="fitStart"
+        app:srcCompat="@drawable/btn_right_start" />
+
+    <ImageView
+        android:id="@+id/iv_right1_music_music"
+        android:layout_width="380dp"
+        android:layout_height="410dp"
+        android:layout_alignEnd="@id/iv_right1_music_bg"
+        android:layout_alignRight="@id/iv_right1_music_bg"
+        android:layout_alignTop="@id/iv_right1_music_bg"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginTop="106dp"
+        android:scaleType="fitStart"
+        app:srcCompat="@drawable/btn_right_music" />
+
+    <ImageView
+        android:id="@+id/iv_right1_music_back"
+        android:layout_width="470dp"
+        android:layout_height="420dp"
+        android:layout_alignEnd="@id/iv_right1_music_bg"
+        android:layout_alignRight="@id/iv_right1_music_bg"
+        android:layout_alignBottom="@id/iv_right1_music_bg"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginBottom="27dp"
+        android:scaleType="fitEnd"
+        app:srcCompat="@drawable/btn_right_back" />
+
+</RelativeLayout>
