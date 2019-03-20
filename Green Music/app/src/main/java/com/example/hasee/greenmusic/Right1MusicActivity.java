@@ -51,6 +51,7 @@ public class Right1MusicActivity extends AppCompatActivity {
     // btn_right1_music_start
     params = (RelativeLayout.LayoutParams) btn_right1_music_start.getLayoutParams();
     params.width = (int) (0.12 * width);
+    params.height = (int) (params.width * 388.0 / 359.0);
     params.rightMargin = (int) (0.203 * width);
     params.topMargin = (int) (0.12 * height);
     btn_right1_music_start.setLayoutParams(params);
@@ -58,6 +59,7 @@ public class Right1MusicActivity extends AppCompatActivity {
     // btn_right1_music_music
     params = (RelativeLayout.LayoutParams) btn_right1_music_music.getLayoutParams();
     params.width = (int) (0.12 * width);
+    params.height = (int) (params.width * 388.0 / 359.0);
     params.rightMargin = (int) (0.068 * width);
     params.topMargin = (int) (0.19 * height);
     btn_right1_music_music.setLayoutParams(params);
@@ -65,6 +67,7 @@ public class Right1MusicActivity extends AppCompatActivity {
     // btn_right1_music_back
     params = (RelativeLayout.LayoutParams) btn_right1_music_back.getLayoutParams();
     params.width = (int) (0.148 * width);
+    params.height = (int) (params.width * 388.0 / 441.0);
     params.rightMargin = (int) (0.068 * width);
     params.bottomMargin = (int) (0.048 * height);
     btn_right1_music_back.setLayoutParams(params);
@@ -72,11 +75,10 @@ public class Right1MusicActivity extends AppCompatActivity {
     btn_right1_music_back.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
+        btn_right1_music_back.setImageResource(R.drawable.btn_right_back_click);
         Right1MusicActivity.this.finish();
       }
     });
-    
-    // player
     
   }
 }

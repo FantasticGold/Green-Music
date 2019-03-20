@@ -8,35 +8,30 @@
 
     <ImageView
         android:id="@+id/iv_main_bg"
-        android:layout_width="315dp"
-        android:layout_height="558dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_centerInParent="true"
+        android:scaleType="fitCenter"
         app:srcCompat="@drawable/bg_main" />
 
     <ImageView
         android:id="@+id/iv_main_left"
-        android:layout_width="43dp"
-        android:layout_height="53dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_alignStart="@id/iv_main_bg"
         android:layout_alignLeft="@id/iv_main_bg"
         android:layout_alignBottom="@id/iv_main_bg"
-        android:layout_marginStart="21dp"
-        android:layout_marginLeft="21dp"
-        android:layout_marginBottom="106dp"
-        android:scaleType="fitEnd"
+        android:scaleType="fitCenter"
         app:srcCompat="@drawable/btn_main_left" />
 
     <ImageView
         android:id="@+id/iv_main_right"
-        android:layout_width="510dp"
-        android:layout_height="480dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_alignEnd="@id/iv_main_bg"
         android:layout_alignRight="@id/iv_main_bg"
         android:layout_alignTop="@id/iv_main_bg"
-        android:layout_marginEnd="21dp"
-        android:layout_marginRight="21dp"
-        android:layout_marginTop="106dp"
-        android:scaleType="fitStart"
+        android:scaleType="fitCenter"
         app:srcCompat="@drawable/btn_main_right" />
 
 

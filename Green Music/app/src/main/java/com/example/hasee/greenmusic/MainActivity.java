@@ -28,7 +28,13 @@ public class MainActivity extends AppCompatActivity {
     DisplayMetrics metrics = new DisplayMetrics();
     getWindowManager().getDefaultDisplay().getMetrics(metrics);
     height = metrics.heightPixels;
-    width = min(metrics.widthPixels, height * 9 / 16);
+    width = metrics.widthPixels;
+    
+    if (height > width * 16/9) {
+      height = width * 16/9;
+    } else {
+      width = height * 9/16;
+    }
     
     bundle = new Bundle();
     bundle.putFloat("width", width);
@@ -48,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
     // btn_main_left
     params = (RelativeLayout.LayoutParams) btn_main_left.getLayoutParams();
     params.width = (int) (0.135 * width);
+    params.height = (int) (params.width * 457.0 / 372.0);
     params.leftMargin = (int) (0.068 * width);
     params.bottomMargin = (int) (0.19 * height);
     btn_main_left.setLayoutParams(params);
@@ -55,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
     // btn_main_right
     params = (RelativeLayout.LayoutParams) btn_main_right.getLayoutParams();
     params.width = (int) (0.16 * width);
+    params.height = (int) (params.width * 413.0 / 441.0);
     params.rightMargin = (int) (0.068 * width);
     params.topMargin = (int) (0.19 * height);
     btn_main_right.setLayoutParams(params);
@@ -62,10 +70,17 @@ public class MainActivity extends AppCompatActivity {
     btn_main_right.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
+        btn_main_right.setImageResource(R.drawable.btn_main_right_click);
         Intent intent = new Intent(MainActivity.this, Right1Activity.class);
         intent.putExtra("size", bundle);
         startActivity(intent);
       }
     });
+  }
+  
+  @Override
+  protected void onResume() {
+    super.onResume();
+    btn_main_right.setImageResource(R.drawable.btn_main_right);
   }
 }
