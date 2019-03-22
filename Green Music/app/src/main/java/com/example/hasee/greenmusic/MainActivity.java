@@ -59,6 +59,16 @@ public class MainActivity extends AppCompatActivity {
     params.bottomMargin = (int) (0.19 * height);
     btn_main_left.setLayoutParams(params);
   
+    btn_main_left.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View v) {
+        btn_main_left.setImageResource(R.drawable.btn_main_left_click);
+        Intent intent = new Intent(MainActivity.this, Left1Activity.class);
+        intent.putExtra("size", bundle);
+        startActivity(intent);
+      }
+    });
+  
     // btn_main_right
     params = (RelativeLayout.LayoutParams) btn_main_right.getLayoutParams();
     params.width = (int) (0.16 * width);
@@ -82,5 +92,6 @@ public class MainActivity extends AppCompatActivity {
   protected void onResume() {
     super.onResume();
     btn_main_right.setImageResource(R.drawable.btn_main_right);
+    btn_main_left.setImageResource(R.drawable.btn_main_left);
   }
 }
