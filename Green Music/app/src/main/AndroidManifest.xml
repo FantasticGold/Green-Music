@@ -18,6 +18,7 @@
         </activity>
         <activity android:name=".Right1Activity"/>
         <activity android:name=".Right1InfoActivity"/>
+        <activity android:name=".Right2InfoActivity"/>
         <activity android:name=".Left1Activity"/>
         <activity android:name=".Left1InfoActivity"/>
         <activity android:name=".Left1MusicActivity"/>
