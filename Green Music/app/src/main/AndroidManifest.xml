@@ -9,19 +9,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".WelcomActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Right1Activity"/>
-        <activity android:name=".Right1InfoActivity"/>
-        <activity android:name=".Right2InfoActivity"/>
-        <activity android:name=".Left1Activity"/>
-        <activity android:name=".Left1InfoActivity"/>
-        <activity android:name=".Left1MusicActivity"/>
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".RightActivity"/>
+        <activity android:name=".InfoActivity"/>
+        <activity android:name=".LeftActivity"/>
+        <activity android:name=".MusicActivity"/>
+        <activity android:name=".StartActivity"/>
+        <service
+            android:name=".MusicService"
+            android:enabled="true"
+            android:exported="true"/>
     </application>
 
 </manifest>

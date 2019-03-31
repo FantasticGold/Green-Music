@@ -7,40 +7,37 @@
     android:background="@color/bg_default">
 
     <ImageView
-        android:id="@+id/iv_left1_info_bg"
+        android:id="@+id/iv_start_bg"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_centerInParent="true"
         android:scaleType="fitCenter"
-        app:srcCompat="@drawable/bg_left1_info" />
+        app:srcCompat="@drawable/iv_blank_bg" />
 
     <ImageView
-        android:id="@+id/iv_left1_info_start"
+        android:id="@+id/iv_start_switch"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignEnd="@id/iv_left1_info_bg"
-        android:layout_alignRight="@id/iv_left1_info_bg"
-        android:layout_alignTop="@id/iv_left1_info_bg"
+        android:layout_alignEnd="@id/iv_start_bg"
+        android:layout_alignTop="@id/iv_start_bg"
         android:scaleType="fitCenter"
-        app:srcCompat="@drawable/btn_start" />
+        app:srcCompat="@drawable/btn_info_start" />
 
     <ImageView
-        android:id="@+id/iv_left1_info_music"
+        android:id="@+id/iv_start_back"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignEnd="@id/iv_left1_info_bg"
-        android:layout_alignRight="@id/iv_left1_info_bg"
-        android:layout_alignTop="@id/iv_left1_info_bg"
+        android:layout_alignEnd="@id/iv_start_bg"
+        android:layout_alignTop="@id/iv_start_bg"
         android:scaleType="fitCenter"
-        app:srcCompat="@drawable/btn_music" />
+        app:srcCompat="@drawable/btn_info_music" />
 
     <ImageView
-        android:id="@+id/iv_left1_info_back"
+        android:id="@+id/iv_info_back"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignEnd="@id/iv_left1_info_bg"
-        android:layout_alignRight="@id/iv_left1_info_bg"
-        android:layout_alignBottom="@id/iv_left1_info_bg"
+        android:layout_alignEnd="@id/iv_start_bg"
+        android:layout_alignBottom="@id/iv_start_bg"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/btn_info_back" />
 
