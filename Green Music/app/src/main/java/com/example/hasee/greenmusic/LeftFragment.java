@@ -40,6 +40,7 @@ public class LeftFragment extends Fragment {
   void init_iv_left_img() {
     params = (RelativeLayout.LayoutParams) iv_left_img.getLayoutParams();
     params.height = (int) ((1-0.417-0.4) * height);
+    params.bottomMargin = (int) ((0.4 - 0.245) * height);
     iv_left_img.setLayoutParams(params);
     iv_left_img.setImageResource(id_left_img);
     

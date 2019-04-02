@@ -51,8 +51,8 @@ public class MusicActivity extends AppCompatActivity {
             R.drawable.gif_music_left4
     };
     final int[] gif_music_bg_rights = {
-            R.drawable.iv_blank_bg,
-            R.drawable.iv_blank_bg
+            R.drawable.gif_music_right1,
+            R.drawable.gif_music_right2
     };
   
     if (group.equals("left")) {
@@ -69,17 +69,22 @@ public class MusicActivity extends AppCompatActivity {
   
   void init_iv_music_jump() {
     params = (RelativeLayout.LayoutParams) iv_music_jump.getLayoutParams();
-    params.width = (int) (0.148 * width);
+    params.width = (int) (0.135 * width);
     params.height = (int) (params.width * 345.0 / 393.0);
     params.rightMargin = (int) (0.068 * width);
-    params.bottomMargin = (int) (0.12 * height);
+    params.bottomMargin = (int) (0.15 * height);
     iv_music_jump.setLayoutParams(params);
     
     iv_music_jump.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
+        Bundle bundle = new Bundle();
+        bundle.putFloat("width", width);
+        bundle.putFloat("height", height);
+        
         Intent intent = new Intent(MusicActivity.this, MainActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        intent.putExtra("data", bundle);
         startActivity(intent);
       }
     });

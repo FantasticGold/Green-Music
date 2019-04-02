@@ -50,7 +50,7 @@ public class LeftActivity extends AppCompatActivity {
     params = (RelativeLayout.LayoutParams) vp_left.getLayoutParams();
     params.width = (int) width;
     params.topMargin = (int) (0.294 * height);
-    params.bottomMargin = (int) (0.4 * height);
+    params.bottomMargin = (int) (0.245 * height);
     vp_left.setLayoutParams(params);
     vp_left.bringToFront();
     
